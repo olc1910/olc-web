@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hobby Fotograf und Programmierer">
+  <meta name="keywords" content="olcrossley, olcrossley"/>
+  <link rel="icon" href="assets/icon.png" />
+  <title>olcrossley.de</title>
+  <link href="tailwind.css" rel="stylesheet">
+</head>
+<body class="bg-body text-white pb-12">
+    <header class="py-6">
+        <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+            <a href="https://olcrossley.de/"><button class="text-lg font-bold">olcrossley.de</button></a>
+            <div class="hidden md:flex space-x-12 items-center">
+                <a href="https://www.youtube.com/@st.jakobi" class="transition-all hover:text-blue-500">St Jakobi YouTube</a>
+                <a href="https://twitter.com/1910Olc" class="transition-all hover:text-blue-500">Twitter</a>
+                <a href="https://discord.gg/SYMH3SWnYE"><button class="px-6 py-2 bg-theme font-bold rounded-md">Discord</button></a>
+            </div>
+            <button id="menu" class="md:hidden">
+                <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z" fill="white"/></svg>
+            </button>
+        </div>
+        <div id="mobilenavbar" class="md:hidden w-full mt-2 lg:mt-0 hidden">
+            <ul class="flex flex-col w-auto space-y-2">
+                <li>
+                  <a href="https://www.youtube.com/@st.jakobi" class="flex px-4 py-2 font-medium text-white rounded-md  hover:bg-blue-800">Youtube</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/1910Olc" class="flex px-4 py-2 font-medium text-white rounded-md  hover:bg-blue-800">Twitter</a>
+                </li>
+                <li>
+                    <a href="https://discord.gg/SYMH3SWnYE" class="flex px-4 py-2 font-medium text-white rounded-md hover:bg-blue-800">Discord beitreten</a>
+                </li>
+              </ul>
+        </div>
+    </header>
+
+    <div class="md:px-40 px-5 py-20 grid sm:grid-flow-row 2xl:grid-flow-col gap-24 2xl:gap-0 justify-center 2xl:place-items-stretch bg-blue-800">
+        <div class="flex justify-center flex-col">
+            <h1 class="font-bold text-5xl max-w-xl">Hobby Fotograf und Programmierer <br>:)</h1>
+        </div>
+        <div class="videocontainer items-center">
+            <iframe class="videoiframe" width="640" height="360" src="https://www.youtube.com/embed/wwH_xuehC5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+    
+    <div class="md:px-40 px-5 py-20 flex gap-10 xl:gap-5 2xl:gap-20 xl:flex-row flex-col justify-center items-center">        <div class="social-item">
+            <a href="https://www.youtube.com/@st.jakobi">
+                <img src="assets/logos/youtube.svg" width="150">
+            </a>
+        </div>
+
+        <div class="social-item">
+            <a href="https://github.com/olc1910">
+                <img src="assets/logos/github.svg" width="150">
+            </a>        
+        </div>
+
+        <div class="social-item">
+            <a href="https://twitter.com/1910Olc">
+                <img src="assets/logos/twitter.svg" width="150">
+            </a>        
+        </div>
+
+        <div class="social-item">
+            <a href="https://discord.com/users/899009494099558410">
+                <img src="assets/logos/discord.svg" width="150">
+            </a>
+        </div>
+    </div>
+
+    <footer class="text-center text-gray-400">
+        © 2023 olcrossley - <a class="text-blue-400" href="https://olcrossley.de/impressum">Impressum</a> | <a class="text-blue-400" href="https://olcrossley.de/kontakt/">Kontakt</a> | <a class="text-blue-400" href="https://olcrossley.de/old-start-page">Alte Startseit</a>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

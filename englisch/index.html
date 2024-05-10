@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Englisch Blog</title>
+    <style>
+        .title {
+            text-decoration: underline;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .undertitle {
+            text-decoration: underline;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .introduction {
+            font-size: 17px;
+            font-family: Sans-serif;
+        }
+        .body {
+            font-size: 17px;
+            font-family: sans-serif;
+        }
+        .conclusion {
+            font-size: 17px;
+            font-family: sans-serif;
+        }
+        .picture {
+            width: 100%;
+            height: auto;
+        }
+        .otis {
+            display: none;
+        }
+        .tom {
+            display: none;
+        }
+        .maxi {
+            display: none;
+        }
+        .buttons-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            padding: 10px;
+            z-index: 1;
+        }
+        .hide {
+            display: none;
+        }
+        .button-hover:hover + .hide {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons-container">
+        <button onclick="window.location.href = 'https://olcrossley.de'">Main</button>
+        <button onclick="showDiv('otis');">Otis</button>
+        <button onclick="showDiv('tom');">Tom</button>
+        <button onclick="showDiv('maxi');">Maxi</button>
+        <button onclick="showDiv('none');">None</button>
+    </div>
+
+    <div class="otis">
+        <br> <!-- Leere Zeile vor der Überschrift -->
+        <h1 class="title">Artificial Intelligence: <br>An Exciting Technology</h1>
+        <h2 class="undertitle">by Otis Lennox Crossley</h2>
+        <p class="introduction">Artificial Intelligence (AI) is an impressive <br> technology that can analyze data and recognize <br> patterns. In this essay, I want to explore AI and <br> discuss its impact on our society.</p>
+        <p class="body">AI can process large amounts of data and <br> provide useful information. Its ability to <br> understand human language has changed the <br> way we interact with technology.</p>
+        <p class="conclusion">AI is an exciting technological development, but <br> it also requires ethical considerations. It is <br> important to use AI responsibly and consider its <br> impact on privacy and employment.</p>
+        <img class="picture" src="Künstliche-Intelligenz.jpg" alt="Künstliche-Intelligenz">
+    </div>
+
+    <div class="tom">
+        <br> <!-- Leere Zeile vor der Überschrift -->
+        <h1 class="title">Heavy Punk: An Exciting Technology</h1>
+        <h2 class="undertitle">by Tom</h2>
+        <p class="introduction">Artificial Intelligence (AI) is an impressive technology that can analyze data and recognize patterns. In this essay, I want to explore AI and discuss its impact on our society.</p>
+        <p class="body">AI can process large amounts of data and provide useful information. Its ability to understand human language has changed the way we interact with technology.</p>
+        <p class="conclusion">AI is an exciting technological development, but it also requires ethical considerations. It is important to use AI responsibly and consider its impact on privacy and employment.</p>
+        <img class="picture" src="Künstliche-Intelligenz.jpg" alt="Künstliche-Intelligenz">
+    </div>
+
+    <div class="maxi">
+        <br> <!-- Leere Zeile vor der Überschrift -->
+        <h1 class="title">Top 5 Pools: An Exciting Technology</h1>
+        <h2 class="undertitle">by Maxi</h2>
+        <p class="introduction">Artificial Intelligence (AI) is an impressive technology that can analyze data and recognize patterns. In this essay, I want to explore AI and discuss its impact on our society.</p>
+        <p class="body">AI can process large amounts of data and provide useful information. Its ability to understand human language has changed the way we interact with technology.</p>
+        <p class="conclusion">AI is an exciting technological development, but it also requires ethical considerations. It is important to use AI responsibly and consider its impact on privacy and employment.</p>
+        <img class="picture" src="Künstliche-Intelligenz.jpg" alt="Künstliche-Intelligenz">
+    </div>
+
+    <script>
+        function showDiv(divName) {
+            var divs = document.querySelectorAll('.otis, .tom, .maxi');
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = 'none';
+            }
+            document.getElementsByClassName(divName)[0].style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>

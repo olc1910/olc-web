@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>olcrossley</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .title {
+            text-decoration: underline;
+            font-size: 30px;
+        }
+
+        .undertitle {
+            text-decoration: underline;
+            font-size: 20px;
+        }
+
+        .me {
+            display: none;
+        }
+
+        .buttons-container {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+        }
+
+        .buttons {
+            margin-right: 16px;
+            margin-bottom: 16px;
+        }
+        #icons {
+            width: 30px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <buttons class="buttons-container">
+        <button class="btn btn-primary" onclick="window.location.href = 'https://olcrossley.de/'">Main</button>
+        <button class="btn btn-primary" onclick="showDiv('me');">Me</button>
+        <!--<button class="btn btn-primary" onclick="window.location.href = 'https://olcrossley.de/deutsch'">Deutsch</button>-->
+        <!--<button class="btn btn-primary" onclick="window.location.href = 'https://olcrossley.de/englisch'">Englisch</button>-->
+        <button class="btn btn-primary" onclick="window.location.href = 'https://olcrossley.de/editor'">Editor</button>
+		<button class="btn btn-primary" onclick="window.location.href = 'https://olcrossley.de/pong-game'">Pong Game</button>
+        <button class="btn btn-primary" onclick="window.location.href = 'https://olcrossley.de/donut'">Free Donut</button>
+        <button class="btn btn-primary" onclick="window.location.href = 'https://olcrossley.de/bitcoin'">Bitcoin</button>
+        <!--<button class="btn btn-primary" onclick="window.location.href = 'https://olcrossley.de/bitcoin-2'">Bitcoin 2</button>-->
+		<button class="btn btn-primary" onclick="window.location.href = 'https://olcrossley.de/pass-gen'">Password-Generator</button>
+		<button class="btn btn-primary" onclick="window.location.href = 'https://olcrossley.de/homepage'">Browser Homepage</button>
+        <button class="btn btn-primary" onclick="window.location.href = 'https://olcrossley.de/kontakt'">Kontakt</button>
+        <button class="btn btn-primary" onclick="window.location.href = 'https://webmail.olcrossley.de/'">Web Mail</button>
+        <button class="btn btn-primary" onclick="window.location.href = 'https://plesk.gameprox.de/'">Plesk</button>
+    </buttons>
+
+
+    <div class="container">
+        <h1 class="title">Otis L. C.</h1>
+        <div class="me">
+            <h2 class="undertitle">About myself</h2>
+            <p>I would like to study sound engineering and become a sound and production technician.</p>
+            <p>Work: I am currently working as a Student at <a href="https://gemsal.de/">Community school at Lehmwohld</a>.</p>
+            <p>And working as a Developer/Admin at <a href="https://myagami.de/">MyAgami</a>.</p>
+            <p>Hobbies: <a href="http://st-jakobi-iz.de">Scouting</a> and the outdoors, programming, gaming, and sound engineering.</p>
+        </div>
+    </div>
+
+    <script>
+        function showDiv(divName) {
+            var divs = document.querySelectorAll('.me');
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = 'none';
+            }
+            document.getElementsByClassName(divName)[0].style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
